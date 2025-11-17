@@ -1,44 +1,109 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<!--A declaração informa ao navegador que a página é um documento HTML5 e o instrui a renderizá-la no modo padrão, evitando o "quirks mode"-->
+<html lang="pt-BR"> <!--A tag serve para declarar o idioma do conteúdo de uma página da web-->
+<!--O <head> são as informaçoes sobre o documento que nao sao exibidas na pagina visivelmente-->
+
 <head>
-    <meta charset="UTF-8">
+    <!--A tag <meta> é usada para fornecer informaçoes adicionais sobre o HTML-->
+    <meta charset="UTF-8"> <!--Conjunto de caracteres-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Landing Page">
-    <meta name="author" content="Dayanne Almeida">
-    <meta name="keywords" content="conceito artistico e minimalista">
+    <!--Instrui o navegador a controlar o dimensionamento e escala da pagina para se ajustar em diferentes dispositivos-->
+    <meta name="description" content="Landing Page"> <!--Descrição da pagina-->
+    <meta name="author" content="Dayanne Almeida"> <!--Nome do autor da pagina-->
+    <meta name="keywords" content="conceito artistico e minimalista"> <!--Lista palavras-chaves da pagina-->
+    <!--A tag <title> define o titulo da pagina na aba do navegador-->
     <title>De pátria para pátria</title>
     <link rel="stylesheet" href="./pages/index.css">
+    <!--a tag <link> é usada para linkar folhas de estilo externas index.css-->
 </head>
+
+<!--A tag <body> define o conteudo visivel da pagina-->
+
 <body>
-    <div class="page">
-<header class="header">
-    <img src="./images/logo.png" class="header__logo" alt="logo"/>
+    <div class="page"> <!--contêiner para agrupar outros elementos e estruturar o layout da página-->
 
-</header>
-<main class="content">
-    <section class="lead">
-        <h1 class="lead__title">De Pátria para Pátria
-        </h1>
-        <p class="lead__subtitle">Uma jornada épica do Kentucky ao Burundi pelo País de Gales e Ucrânia</p>
-        <img src="./images/lead__image.jpg" class="lead__image" alt="Paisagem">
-    </section>
+        <header class="header"> <!--Cabeçalho da pagina-->
+            <img src="./images/logo.png" class="header__logo" alt="logo" />
 
-    <section class="intro">
-        <h2 class="intro__title">Conheça um pouco mais sobre a localização dos seus amigos</h2>
-        <p class="intro__subtitle">Cada pessoa é um artista livre, chamado a transformar as 
-            condições, pensamentos e estruturas que moldam nossas vidas.</p> 
-        <p class="intro__author">— Joseph Beuys</p>
-        <p class="intro__text">A cidade de TripleTen reuniu profissionais de diversos cantos do mundo. Hoje, 
-            a Galeria de Arte TripleTen tem o orgulho de apresentar histórias e fotos de algumas das pessoas que dedicam seu tempo e esforço para fazer com que os futuros profissionais de tecnologia desta cidade se sintam em casa.
-             Cada um de nós tem uma história única sobre o lugar de onde viemos. Sinta-se à vontade para adicionar sua própria história e uma obra de arte visual dedicada à sua cidade natal à nossa coleção. Não importa de onde você é, 
-             estamos felizes por você ser nosso vizinho.</p>
-    </section>
-</main>
+        </header>
 
-    <footer class="footer">
-        <p class="footer__copyright">© 2024. Dayanne Almeida</p>
-    </footer>
+        <!--A tag <main> define o conteúdo principal de uma página web, que é o conteúdo único e diretamente relacionado ao tópico central do documento-->
+        <main class="content">
+            <section class="lead">
+                <!--A tag <section> serve para agrupar conteúdo relacionado, criando uma seção temática e semântica dentro de um documento-->
+                <!--A tag <h1> defini o título principal da página web, com a classe=lead__title serve para linkar os estilos ao elemento lead.css-->
+                <h1 class="lead__title">De Pátria para Pátria
+                </h1>
+                <p class="lead__subtitle">Uma jornada épica do Kentucky ao Burundi pelo País de Gales e Ucrânia</p>
+                <img src="./images/lead__image.jpg" class="lead__image" alt="Paisagem">
+            </section>
+
+            <section class="intro">
+                <!--A <section> com class=intro serve para linkar os estilos ao elemento intro.css-->
+                <h2 class="intro__title">Conheça um pouco mais sobre a localização dos seus amigos</h2>
+                <p class="intro__subtitle">Cada pessoa é um artista livre, chamado a transformar as
+                    condições, pensamentos e estruturas que moldam nossas vidas.</p>
+                <p class="intro__author">— Joseph Beuys</p>
+                <p class="intro__text">A cidade de TripleTen reuniu profissionais de diversos cantos do mundo. Hoje,
+                    a Galeria de Arte TripleTen tem o orgulho de apresentar histórias e fotos de algumas das pessoas que
+                    dedicam seu tempo e esforço para fazer com que os futuros profissionais de tecnologia desta cidade
+                    se sintam em casa.
+                    Cada um de nós tem uma história única sobre o lugar de onde viemos. Sinta-se à vontade para
+                    adicionar sua própria história e uma obra de arte visual dedicada à sua cidade natal à nossa
+                    coleção. Não importa de onde você é,
+                    estamos felizes por você ser nosso vizinho.</p>
+            </section>
+
+            <section class="photo__grid">
+                <div class="grid-content">
+                    <img src="./images/__item 1.png" alt="imagem 1">
+                    <img src="./images/__item 2.png" alt="imagem 2">
+                    <img src="./images/__item 3.png" alt="imagem 3">
+                    <img src="./images/__item 4.png" alt="imagem 4">
+                    <img src="./images/__item 5.png" alt="imagem 5">
+                    <img src="./images/__item 6.png" alt="imagem 6">
+                    <img src="./images/__item 7.png" alt="imagem 7">
+                    <img src="./images/__item 8.png" alt="imagem 8">
+                </div>
+            </section>
+
+            <section class="places">
+                <h2 class="places__title">Criccieth País de Gales</h2>
+         
+                <div class="places__website">
+                    <h2 class="places__website-url-heading">ARTISTAS</h2>
+                    <p>Steffan Warren, editor-chefe</p>
+                    <p>Kseniya Glagoleva, gerente de projeto</p>
+
+                <img src="./images/__item 2.png" alt="Paisagem">
+
+                <p>A ruína medieval do Castelo de Cricieth tem vista para a cidade abaixo de uma rocha que se projeta
+                    para o mar.
+                    Acredita-se que tenha sido construído por Llewelyn, o Grande, no século XIII. Cerca de 900 anos
+                    depois,
+                    a auto-intitulada *Pérola de Gales nas margens de Snowdonia* tornou-se um destino turístico popular
+                    durante os meses de verão. </p>
+                <p>A uma curta caminhada da estrada do castelo, você pode desfrutar do melhor sorvete do mundo no
+                    Cadwalader's,
+                    cujo ingrediente secreto, segundo rumores, são algas marinhas de origem local. Outra reivindicação à
+                    fama é o fato
+                    de que Criccieth ganhou o prêmio *Wales in Bloom* por cinco
+                    anos consecutivos por suas espetaculares exibições florais pela cidade. Foi também a casa de David
+                    Lloyd George,
+                    o único galês a ocupar o cargo de primeiro-ministro do Reino Unido.</p>
+
+                <button>Compre esta obra de arte como NFT</button>
+
+            </section>
+        </main>
+
+        <footer class="footer">
+            <!--A tag <footer> é a parte final da pagina, por assim dizer o rodapé da pagina, e com a class=footer linka os estilos ao elemrnto footer.css-->
+            <p class="footer__copyright">© 2024. Dayanne Almeida</p>
+        </footer>
     </div>
-    
+</div>
+    </div>
 </body>
+
 </html>

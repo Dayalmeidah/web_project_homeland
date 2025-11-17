@@ -1,4 +1,4 @@
-#  🎨 De Pátria para Pátria — Projeto Sprint 5
+#  🎨 De Pátria para Pátria — Projeto Sprint 6
 
  Este projeto se trata de uma página web inspirada no projeto **"De Pátria para Pátria"**, criada como parte do exercício da sprint 5 de desenvolvimento front-end.  
 O layout foi concebido no **Figma** e implementado em **HTML5** e **CSS3**, com foco em tipografia, contraste, experiência visual e um layout responsivo.
@@ -24,3 +24,4 @@ O layout foi concebido no **Figma** e implementado em **HTML5** e **CSS3**, com 
 
 ## 📜 Licença
 Este projeto é de uso educacional e pessoal.
+<!--colocar o link para o github pages>

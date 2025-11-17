@@ -1,0 +1,56 @@
+.place{
+ width: 984px;
+ height: 832;
+ top: 2403px;
+ left: 148px;
+ font-family: "Inter";
+ font-weight: 900;
+ box-shadow: 10px 10px 25px 0px #00000080;
+
+}
+.place__title{
+ width: 460;
+ height: 228;
+ top: 2403px;
+ left: 148px;
+
+}
+
+.places__website-url-heading{
+ font-weight: 400;
+ font-size: 12px;
+ line-height: 100%;
+ letter-spacing: 12%;
+ text-transform: uppercase;
+}
+
+.places__artist{ 
+ font-weight: 400;
+ font-size: 18px;
+ line-height: 22px;
+ letter-spacing: 0%;
+}
+
+@media screen and (max-width:1280px) {
+    .place__title{
+ font-size: 72px;
+ line-height: 76px;
+}
+}
+
+@media screen and (max-width:768px) {
+    .place__title{
+ font-size: 42px;
+ line-height: 46px;
+ 
+}
+}
+@media screen and (max-width:320px) {
+    .place__title{
+    
+ font-weight: 900;
+ font-size: 32px;
+ line-height: 35px;
+
+    }
+}

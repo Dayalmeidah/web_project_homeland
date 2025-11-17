@@ -1,0 +1,26 @@
+.grid-content{
+    display:grid; /* transforma o conteiner numa grade com colunas e linhas */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*para definir o número e o tamanho das colunas numa estrutura de grade (grid).*/
+    grid-template-rows: 1fr; /*ara definir o tamanho e o número de linhas (as pistas horizontais) num layout de grid*/
+    gap:16px; /*criar espaçamento entre os elementos de um contêiner flex ou grid, tanto nas linhas quanto nas colunas*/
+   padding: 48px; /* espaçamento interno de um elemento de web design, que define a distância entre o conteúdo e a borda do elemento.*/
+}
+
+.div{
+    width: 284;
+    height: 213;
+    top: 2098px;
+    left: 48px;
+}
+
+@media screen and (max-width:1280px) {
+
+}
+
+@media screen and (max-width:768px) {
+
+}
+
+@media screen and (max-width:320px) {
+
+}
