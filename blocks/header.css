@@ -10,18 +10,15 @@
     height: 70px;
 }
 
-@media screen and (max-width:1280px) {
+@media screen and (max-width:1024px) {
     .header{
      padding: 30px;
 }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:640px) {
     .header{
     padding: 20px;
 }
 }
 
-@media screen and (max-width:320px) {
-    
-}

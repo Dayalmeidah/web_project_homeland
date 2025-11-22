@@ -27,14 +27,14 @@ margin: 90px auto 92px;
     width: 100%;
 }
 
-@media screen and (max-width:1280px) {
+@media screen and (max-width:1024px) {
     .lead__title{
 font-size: 75px;
 line-height: 79px;
 }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:640px) {
     .lead__title{
 font-size: 40px;
 line-height: 44px;
@@ -44,9 +44,5 @@ font-size: 16px;
 line-height: 20px;
 
 }
-}
-
-@media screen and (max-width:320px) {
-
 }
 

@@ -1,10 +1,10 @@
 .page{
-max-width: 1280px;
-margin: 0 auto;
-color: #ffff;
- font-family: "Inter",sans-serif;
+max-width: 1280px; /*definir a largura maxima de um elemento*/
+margin: 0 auto; /*usado para criar um espaço externo a volta de um elemento*/
+color: #ffff; /*definir a cor do texto*/
+ font-family: "Inter",sans-serif; /*usada para definir uma lista de fontes, e para controlar a aparencia do texto*/
 }
 
 body{
-    background-color: #2A2C2F;
+    background-color: #2A2C2F; /*para definir a cor de fundo de um elemento ou da pagina inteira*/
 }

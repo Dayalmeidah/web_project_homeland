@@ -1,0 +1,30 @@
+.photo-grid {
+    display: grid;
+    /* transforma o conteiner numa grade com colunas e linhas */
+    grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+    /*para definir o número e o tamanho das colunas numa estrutura de grade (grid).*/
+
+    /*ara definir o tamanho e o número de linhas (as pistas horizontais) num layout de grid*/
+    gap: 16px;
+    /*criar espaçamento entre os elementos de um contêiner flex ou grid, tanto nas linhas quanto nas colunas*/
+    padding: 48px;
+    /* espaçamento interno de um elemento  que define a distância entre o conteúdo e a borda do elemento.*/
+}
+
+
+
+@media screen and (max-width:1024px) {
+    .photo-grid {
+        top: 1869px;
+        left: 48px;
+
+    }
+}
+
+@media screen and (max-width:640px) {
+    .photo-grid {
+        top: 1595px;
+        left: 24px;
+
+    }
+}

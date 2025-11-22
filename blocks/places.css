@@ -1,15 +1,18 @@
 .place {
-    font-family: "Inter";
-    display: grid;
+    font-family: "Inter"; /*usada para definir uma lista de fontes, e para controlar a aparencia do texto*/
+    display: grid; 
     grid-template-columns: 460px 1fr;
     grid-template-rows: auto auto 1fr;
-    column-gap: 40px;
+    column-gap: 40px; /*definir espaço entre colunas*/
     row-gap: 48px;
     margin-bottom: 80px;
-    grid-template-areas: 
-    "title artist"
-    "image text"
-    "button text";
+    grid-template-areas: /*para criar e nomear áreas de 
+    um layout CSS Grid, definindo visualmente a estrutura de linhas e colunas de um contêiner.*/
+        "title artist"
+        "image text"
+        "button text";
+    padding: 46px 148px 46px;  /* espaçamento interno de um elemento  que define a distância entre o conteúdo e a borda do elemento.*/
+    margin: 0 auto;
 
 
 }
@@ -29,7 +32,7 @@
     line-height: 163%;
     letter-spacing: 0%;
     color: #FFFFFF;
-grid-area: text;
+    grid-area: text;
 
 }
 
@@ -38,8 +41,8 @@ grid-area: text;
     font-size: 18px;
     line-height: 163%;
     letter-spacing: 0%;
-grid-area: artist;
-align-self: end;
+    grid-area: artist;
+    align-self: end;
 }
 
 .place__image {
@@ -64,32 +67,35 @@ align-self: end;
     font-size: 15px;
     font-weight: 600;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-grid-area: button;
-height: max-content;
-width: max-content;
+    grid-area: button;
+    height: max-content;
+    width: max-content;
 }
 
 /*As media queries são uma ferramenta do CSS que permite aplicar estilos diferentes a um website 
 com base nas características do dispositivo do utilizador, como tamanho da tela, orientação e resolução */
 
-@media screen and (max-width:1280px) { 
+@media screen and (max-width:1024px) {
     .place__title {
         font-size: 72px;
         line-height: 76px;
     }
-
+    
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:640px) {
     .place__title {
         font-size: 42px;
         line-height: 46px;
     }
-}
-
-@media screen and (max-width:320px) {
-    .place__title {
-        font-size: 32px;
-        line-height: 35px;
+    .place{
+        grid-template-areas: 
+        "title"
+        "artist"
+        "image"
+        "text"
+        "button"
+        ;
     }
+
 }
