@@ -13,8 +13,6 @@
         "button text";
     padding: 46px 148px 46px;  /* espaçamento interno de um elemento  que define a distância entre o conteúdo e a borda do elemento.*/
     margin: 0 auto;
-
-
 }
 
 .place__title {
@@ -59,10 +57,7 @@
     background: linear-gradient(90deg, #0278FE 0%, #003A88 99.9%);
     color: white;
     border-radius: 4px;
-    padding-bottom: 13px;
-    padding-left: 20px;
-    padding-top: 13px;
-    padding-right: 20px;
+    padding: 13px 20px;
     cursor: pointer;
     font-size: 15px;
     font-weight: 600;
@@ -72,21 +67,29 @@
     width: max-content;
 }
 
-/*As media queries são uma ferramenta do CSS que permite aplicar estilos diferentes a um website 
-com base nas características do dispositivo do utilizador, como tamanho da tela, orientação e resolução */
 
 @media screen and (max-width:1024px) {
     .place__title {
         font-size: 72px;
         line-height: 76px;
     }
-    
+    .place__description{
+     font-size: 18px;
+
+    }
+    .places{
+        padding: 0 24px;
+    }
+    .place{
+        padding: 0;
+    }
 }
 
 @media screen and (max-width:640px) {
     .place__title {
         font-size: 42px;
         line-height: 46px;
+        padding: 0 16px;
     }
     .place{
         grid-template-areas: 
@@ -97,5 +100,15 @@ com base nas características do dispositivo do utilizador, como tamanho da tela
         "button"
         ;
     }
+    .place__website{
+        padding: 0 16px;
 
+    }
+.place__description{
+    padding: 0 16px;
+}
+
+.place__button{ 
+    margin: 0 16px;
+}
 }
